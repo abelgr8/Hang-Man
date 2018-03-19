@@ -59,22 +59,25 @@ function startGame () {
     }
 }
 
-function userWin () {
+function userWorL () {
     console.log("Win Count: " + winCount + " | Loss Count: " + lossCount + " | Guesses Left: " + guessesLeft);
     
-    // win 
+    // win or lose
     if (lettersinWord.toString() === blanksAndSuccesses.toString()) {
         winCount++;
         alert ("You Win");
         document.getElementById("wins").innerHTML = winCount;
         startGame();
+    } else if (guessesLeft == 0) {
+        lossCount++;
+        alert ("You Lost");
+        document.getElementById("losses").innerHTML = lossCount;
+        startGame();
     }
-
-    //lose
 
 }
 
 
 startGame();
-userWin ();
+userWorL ();
 
