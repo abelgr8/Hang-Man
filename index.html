@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hang-Man | The Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class= "jumbotron bg-primary text-center" >
+            <h1>Hangman!</h1>
+        </div>
+      
+        <div class="row" >
+            <div class="col-sm-6">
+                <div class="panel panel-success">
+                    <div class="panel-heading">Word</div>
+                    <div class="panel-body" id="game">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6" >
+                <div class="panel panel-danger">
+                    <div class="panel-heading">Already Guessed Letters</div>
+                    <div class="panel-body" id="wrong"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class= "row">
+            <div class="col-sm-6">
+                <div class="panel panel-success">
+                    <div class="panel-heading">Score Card</div>
+                    <div class="panel-body" >
+                            <p id="chances">Guesses Left: 6</p>
+                            <p id="wins">Wins: 0</p>
+                            <p id="losses">Losses: 0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="panel panel-success">
+                    <div class="panel-heading">--</div>
+                    <div class="panel-body" id=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="guessesLeft"></div>
+        <div class="row" id="wins"></div>
+        <div class="row" id="losses"></div>
+    </div>
+</body>
+
+</html>
