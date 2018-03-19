@@ -3,7 +3,7 @@ $(document).ready(function() {
     var words = ["hawks", "celtics", "nets", "hornets", "bulls", "cavaliers", "mavericks", "nuggets", "pistons", "warriors", "rockets", "pacers", "clippers", "lakers", "grizzlies", "heat", "bucks", "timberwolves", "pelicans", "knicks", "thunder", "magic", "76ers", "suns", "trail blazers", "kings", "spurs", "raptors", "jazz", "wizards",
     ];
 
-    //random word selector------------------------------------------------------
+    //Random Word Selector------------------------------------------------------
     var word = words[Math.floor(Math.random() * words.length)];
     console.log(word);
 
@@ -53,14 +53,15 @@ $(document).ready(function() {
             losses++;
           }
           for (var i = 0; i < word.length; i++) {
-            if (counter === word.length) {
+            if (counter == word.length) {
                 document.getElementById("wins").innerHTML = "Wins: " + wins;
                 alert("You Win!");
                 wins++;
+                console.log(counter);
             }
         }
         
-        console.log(counter)
+        
     };
     //reset 
 
